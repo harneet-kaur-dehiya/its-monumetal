@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List of Monuments</title> 
+        <style type="text/css"> 
+            .mon{
+                max-width:200px;
+                max-height: 200px;
+            }
+            .state{
+                max-width:200px;
+                max-height: 200px;
+            }
+            </style>
+    </head>
+    <body>
+        <center><h1>List of Monuments</h1>
+        <table>
+            <tr>
+                <th style="position : sticky;top: 0px; background-color: white;">State</th>
+                <th style="position : sticky;top: 0px;background-color: white;">Monuments</th>
+            </tr>
+    <script>
+
+  var dict = {
+  "states/andhrap.png": ["monuments/mon48.png"],
+  "states/arunachalp.png":["monuments/mon53.png","monuments/mon54.png","monuments/mon55.png"],
+  "states/assam.png": ["monuments/mon25.png"],
+  "states/bihar.png": ["monuments/mon32.png"],
+  "states/chhattisgarh.png": ["monuments/mon40.png"],
+  "states/goa.png": ["monuments/mon7.png","monuments/mon43.png"],
+  "states/gujarat.png": ["monuments/mon13.png","monuments/mon30.png","monuments/mon39.png","monuments/mon45.png"],
+  "states/haryana.png": ["monuments/mon36.png"],
+  "states/hp.png": ["monuments/mon27.png"],
+  "states/jharkhand.png": ["monuments/mon56.png"],
+  "states/karnataka.png": ["monuments/mon19.png","monuments/mon35.png","monuments/mon37.png"],
+  "states/kerala.png": ["monuments/mon21.png"],
+  "states/mp.png": ["monuments/mon18.png","monuments/mon28.png","monuments/mon41.png","monuments/mon42.png"],
+  "states/maharashtra.png": ["monuments/mon2.png","monuments/mon8.png","monuments/mon11.png","monuments/mon15.png"],
+  "states/manipur.png": ["monuments/mon22.png"],
+  "states/meghalaya.png": ["monuments/mon29.png"],
+  "states/mizoram.png": ["monuments/mon44.png"],
+  "states/nagaland.png": ["monuments/mon52.png","monuments/mon51.png"],
+  "states/odisha.png": ["monuments/mon46.png"],
+  "states/punjab.png": ["monuments/mon17.png"],
+  "states/rajasthan.png": ["monuments/mon3.png","monuments/mon20.png","monuments/mon23.png","monuments/mon24.png","monuments/mon34.png"],
+  "states/sikkim.png": ["monuments/mon12.png","monuments/mon38.png"],
+  "states/tn.png": ["monuments/mon9.png","monuments/mon16.png","monuments/mon31.png","monuments/mon33.png"],
+  "states/telangana.png": ["monuments/mon10.png"],
+  "states/tripura.png": ["monuments/mon49.png"],
+  "states/up.png": ["monuments/mon1.png","monuments/mon2.png","monuments/mon6.png","monuments/mon14.png","monuments/mon47.png"],
+  "states/uttarakhand.png": ["monuments/mon5.png","monuments/mon26.png"],
+  "states/wb.png": ["monuments/mon50.png"] }; 
+
+
+        for (var key in dict){
+            document.writeln("<tr><td><img src=' "+key+"' id='state' style='max-width:200px;max-height: 200px;'></td>");
+                for (var i in dict[key]){
+                    document.writeln("<td><img src='"+dict[key][i]+"' id='mon' style='max-width:200px;max-height: 200px;'></td>");
+                }
+            document.writeln("</tr>");
+            console.log( key, dict[key] );
+    }
+    </script>
+    </table></center>
+    </body>
+</html>

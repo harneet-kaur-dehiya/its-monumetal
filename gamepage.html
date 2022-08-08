@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body><div style="position:relative;top:-10px;">
+  <p style="text-align: center; font-size:25px;" id="temp">Its Monumental!</p>
+  <div style="position:relative;top:-25px;">
+    <div id="dropZone">
+    <div id="dropBox1" class="dropBox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div><img src="" id="state1"></div><div style='max-width:100%;border:solid black 1px; height:200px;'></div>
+    </div>
+    <div id="dropBox2" class="dropBox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div><img src="" id="state2"></div><div style='max-width:100%;border:solid black 1px; height:200px;'></div>
+    </div>
+    <div id="dropBox3" class="dropBox3" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div><img src="" id="state3"></div><div style='max-width:100%;border:solid black 1px; height:200px;'></div>
+    </div>
+    <div id="dropBox4" class="dropBox4" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div><img src="" id="state4"></div><div style='max-width:100%;border:solid black 1px; height:200px;'></div>
+    </div>
+  </div>
+
+  <div id="monuments" ondrop="drop(event)" ondragover="allowDrop(event)"  >
+    <div class="container">
+      <img id="mon1" src="" draggable="true" ondragstart="drag(event)"/><br>
+      <div id="hintcont1"><button onclick="displayHint()" id="hint1"><span></span>
+        <span></span>
+        <span></span>
+        <span></span>Hint</button></div>
+    </div>
+    <div class="container">
+      <img id="mon2" src="" draggable="true" ondragstart="drag(event)"/><br>
+      <div id="hintcont2"><button  onclick="displayHint()" id="hint2"><span></span>
+        <span></span>
+        <span></span>
+        <span></span>Hint</button></div>
+    </div>
+    <div class="container">
+      <img id="mon3" src="" draggable="true" ondragstart="drag(event)"/><br>
+      <div id="hintcont3"><button  onclick="displayHint()" id="hint3"><span></span>
+        <span></span>
+        <span></span>
+        <span></span>Hint</button></div>
+    </div>
+    <div class="container">
+      <img id="mon4" src="" draggable="true" ondragstart="drag(event)"/><br>
+      <div id="hintcont4"><button  onclick="displayHint()" id="hint4"><span></span>
+        <span></span>
+        <span></span>
+        <span></span>Hint</button></div>
+    </div>
+  </div>
+  <center><button id="submit" onclick="mySubmit()"><span></span>
+    <span></span>
+    <span></span>
+    <span></span>Submit</button></center>
+</div></div>
+<script src="jscript.js" defer></script>
+  </body>
+  </html>
